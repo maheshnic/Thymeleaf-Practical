@@ -42,4 +42,11 @@ public class UserController {
 
         return "condition";
     }
+
+//    Handler for fragments
+    @GetMapping("/fragment")
+    public String servicesHandler(Model model){
+
+        return "service";
+    }
 }

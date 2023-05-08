@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Services Page</title>
+</head>
+<body>
+	<h1>These are Services provided by National Informatics Center</h1>
+	<!-- Going to implement fragments -->
+	<!--    th:replace:- It will actually substitute the host Tag by the fragment's Tag-->
+	<!--    th:insert:- It will simply insert the specified fragment as the body of its host tag including the
+	fragments tag-->
+	<!--    th:include:- It will simply insert the specified fragment as the body of its host tag excluding the
+	fragments tag-->
+
+	<footer id="hostTag" th:replace="footer::footer1">
+		<h1>This is part of host Tag Service.</h1>
+	</footer>
+
+</body>
+</html>
