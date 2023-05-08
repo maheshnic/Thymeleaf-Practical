@@ -52,4 +52,14 @@ public class UserController {
 
         return "service";
     }
+
+    @GetMapping("/newabout")
+    public String newAbout(){
+        return "aboutNew";
+    }
+
+    @GetMapping("/contact")
+    public String contactPage(){
+        return "contact";
+    }
 }
