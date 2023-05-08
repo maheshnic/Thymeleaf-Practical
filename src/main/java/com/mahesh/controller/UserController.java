@@ -29,4 +29,17 @@ public class UserController {
 
         return "iterate";
     }
+
+//    Handler for Conditional statement
+    @GetMapping("/condition")
+    public String conditionalHandler(Model model){
+        System.out.println("Conditional Handler Executed");
+        model.addAttribute("isActive", true);
+        model.addAttribute("gender", "F");
+
+        List<Integer> numbers = List.of(231, 43, 78, 89, 90, 81, 23);
+        model.addAttribute("myList", numbers);
+
+        return "condition";
+    }
 }
