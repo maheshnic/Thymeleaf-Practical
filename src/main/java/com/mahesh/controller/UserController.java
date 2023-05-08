@@ -4,6 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
 
@@ -46,6 +47,8 @@ public class UserController {
 //    Handler for fragments
     @GetMapping("/fragment")
     public String servicesHandler(Model model){
+        model.addAttribute("title", "Nothing is impossible");
+        model.addAttribute("subtitle", LocalDateTime.now().toString());
 
         return "service";
     }

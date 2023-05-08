@@ -13,7 +13,7 @@
 	<!--    th:include:- It will simply insert the specified fragment as the body of its host tag excluding the
 	fragments tag-->
 
-	<footer id="hostTag" th:replace="footer::footer1">
+	<footer id="hostTag" th:replace="footer::footer1(${title}, ${subtitle})">
 		<h1>This is part of host Tag Service.</h1>
 	</footer>
 

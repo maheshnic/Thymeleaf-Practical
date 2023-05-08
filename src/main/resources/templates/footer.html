@@ -6,11 +6,13 @@
 </head>
 <body>
 
-	<footer id="fragmentTag" th:fragment="footer1">
+	<footer id="fragmentTag" th:fragment="footer1(title, subtitle)">
 		<div class="container" >
-			<h1>About Learn Code with Mahesh</h1>
-			<h2>Provide Good content about Programming</h2>
-			<h3>Feel free to contact and work with me</h3>
+			<h1 th:text="${title}"></h1>
+			<h2 th:text="${subtitle}"></h2>
+			<h3>About Learn Code with Mahesh</h3>
+			<h4>Provide Good content about Programming</h4>
+			<h5>Feel free to contact and work with me</h5>
 
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
 				sed arcu nec elit feugiat volutpat eu sit amet dui. Curabitur
